@@ -87,6 +87,14 @@ main {
 
 .card .card-action {
   position: unset;
+  float: right;
+  border-bottom: 1px solid rgba(160,160,160,0.2);
+  width: 100%;
+}
+
+.card .card-action a {
+  float: right;
+  margin: unset !important;
 }
 
 .card .card-action:last-child {
