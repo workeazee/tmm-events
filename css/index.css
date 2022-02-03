@@ -1,0 +1,180 @@
+body {
+  /*   background-color: aliceblue; */
+  background: url("../images/bg.jpg") center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh vh;
+  font-family: "Lora", serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  backdrop-filter: blur(2px);
+  opacity: 0.85;
+}
+
+nav.scrolled {
+  backdrop-filter: blur(10px);
+  transition: all 3s ease;
+}
+
+nav .nav-wrapper a {
+  display: flex;
+  align-items: center;
+}
+
+nav .brand-logo {
+  position: unset;
+}
+
+nav .brand-logo img {
+  width: 10rem;
+  transition: all 1s ease;
+}
+
+nav .page-title {
+  font-size: 2rem;
+  margin-left: 1rem;
+  transition: all 1s ease;
+}
+
+nav.scrolled .brand-logo img {
+  width: 7.5rem;
+  transition: all 1s ease;
+}
+
+nav.scrolled .page-title {
+  font-size: 1.5rem;
+  transition: all 1s ease;
+}
+
+main {
+  margin-top: 16rem;
+  margin-bottom: 2rem;
+}
+
+.custom-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  position: unset;
+  flex-basis: 48%;
+  box-shadow: rgb(255 255 255) 0px 0px 20px 0px, rgb(61 61 61) -2px -2px 10px,
+    rgb(61 61 61) 2px 2px 10px;
+  margin-bottom: 50px !important;
+  border-radius: 10px;
+}
+
+.card .card-title {
+  padding: 0px 24px;
+}
+
+.card .card-image {
+  position: unset;
+}
+
+.card .card-image img {
+  position: unset;
+}
+
+.card .card-content {
+  position: unset;
+}
+
+.card .card-action {
+  position: unset;
+}
+
+.card .card-action:last-child {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.tooltipped {
+  color: #249c84;
+}
+
+.material-tooltip {
+  background-color: #249c84;
+  color: #000;
+}
+
+footer {
+  background: antiquewhite;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0 -3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 -6px 10px 0 rgba(0, 0, 0, 0.14), 0 -1px 18px 0 rgba(0, 0, 0, 0.12);
+  transition: all 1s ease;
+  display: flex;
+  border-bottom: 0;
+  justify-content: space-evenly;
+  z-index: 100;
+}
+
+footer p {
+  margin: 0.25rem;
+  transition: all 1s ease;
+}
+
+footer.scrolled p {
+  margin: 0.5rem;
+  transition: all 1s ease;
+}
+
+@media only screen and (max-width: 992px) {
+  nav .brand-logo {
+    transform: unset;
+    -webkit-transform: unset;
+  }
+
+  nav .page-title {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    flex-basis: unset;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+    main {
+        margin-top: 20rem;
+    }
+}
+
+/* SCROLL BAR CSS STARTS*/
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border: 3px solid transparent;
+  border-radius: 15px;
+  background-clip: content-box;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border: 3px solid transparent;
+  border-radius: 15px;
+  background-clip: content-box;
+}
+/* SCROLL BAR CSS ENDS*/
