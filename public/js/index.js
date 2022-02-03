@@ -1,19 +1,17 @@
 $(document).ready(function () {
   $(".tabs").tabs();
-  $('.tooltipped').tooltip();
+  $(".tooltipped").tooltip();
 
-  $('.tooltipped').on('click mouseover', function() {
+  $(".tooltipped").on("click mouseover", function () {
     $(this).tooltip();
-    $(this).tooltip('open');
+    $(this).tooltip("open");
   });
-      
-  $('.tooltipped').mouseleave(function() {
-    if ($(this).tooltip()){
-      $(this).tooltip('destroy');
+
+  $(".tooltipped").mouseleave(function () {
+    if ($(this).tooltip()) {
+      $(this).tooltip("destroy");
     }
   });
-
-
 });
 
 $(window).scroll(function () {

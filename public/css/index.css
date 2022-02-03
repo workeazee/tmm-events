@@ -1,5 +1,4 @@
 body {
-  /*   background-color: aliceblue; */
   background: url("../images/bg.jpg") center;
   background-attachment: fixed;
   background-size: cover;
@@ -146,9 +145,9 @@ footer.scrolled p {
 }
 
 @media only screen and (max-width: 320px) {
-    main {
-        margin-top: 20rem;
-    }
+  main {
+    margin-top: 20rem;
+  }
 }
 
 /* SCROLL BAR CSS STARTS*/
