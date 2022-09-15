@@ -1,5 +1,5 @@
 body {
-  background: url("../images/bg8.jpg") center;
+  background: url("../images/bg9.png") center;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -192,4 +192,19 @@ a.fill-div {
   width: 100%;
   text-decoration: none;
   text-align: center;
+}
+
+.blink-bg{
+  color: #fff;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  animation: blinkingBackground 2s infinite;
+}
+@keyframes blinkingBackground{
+  0%		{ background-color: #10c018;}
+  25%		{ background-color: #1056c0;}
+  50%		{ background-color: #ef0a1a;}
+  75%		{ background-color: #254878;}
+  100%	        { background-color: #04a1d5;}
 }
