@@ -1,5 +1,5 @@
 body {
-  background: url("../images/bg.jpg") center;
+  background: url("../images/bg8.jpg") center;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -185,3 +185,11 @@ footer.scrolled p {
   background-clip: content-box;
 }
 /* SCROLL BAR CSS ENDS*/
+
+a.fill-div {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+}
