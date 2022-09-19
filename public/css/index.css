@@ -39,6 +39,10 @@ nav .page-title {
   transition: all 1s ease;
 }
 
+.page-title-text{
+  margin:0;
+}
+
 nav.scrolled .brand-logo img {
   width: 7.5rem;
   transition: all 1s ease;
